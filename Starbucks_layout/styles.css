@@ -1,0 +1,162 @@
+:root {
+	--blanco: #fff;
+	--verde: #017143;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+.container {
+	overflow: hidden;
+	height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+
+.menu__logo {
+	padding-left: 100px;
+}
+
+.menu__logo img {
+	height: 80px;
+	width: 80px;
+}
+
+.menu__nav {
+	    display: flex;
+    list-style: none;
+    padding: 10px 50px;
+    padding-right: 100px;
+    gap: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.menu__nav li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.main__container {
+	display: flex;
+}
+
+.main__text {
+	width: 90%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__text h2 {
+	color: #333;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+
+.main__text h2 span {
+	color: #017143;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+.main__text a {
+	padding: 10px 30px;
+	border-radius: 20px;
+	background-color: var(--verde);
+	color: var(--blanco);
+	border: none;
+	margin-top: 20px;
+	font-weight: 500;
+	width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main__image-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--verde);
+	clip-path: ellipse(47vw 80vh at bottom right);
+	z-index: -1;
+	transition: 200ms;
+}
+
+.main__image {
+	display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main__image img {
+	height: 600px;
+}
+
+.main__thumbs {
+}
+
+.main__thumbs ul {
+display: flex;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    bottom: 20px;
+}
+
+.main__thumbs ul li {
+	transition: 200ms;
+	cursor: pointer;
+}
+
+.main__thumbs ul li:hover {
+	transform: translateY(-20px);
+}
+
+.main__thumbs img {
+	width: 100px;
+}
+
+.main__social {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    height: 100%;
+    display: flex;
+}
+
+.main__social ul {
+	list-style: none;
+	color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    gap: 10px;
+}
+
+.main__social ul li {
+	cursor: pointer;
+	transition: 200ms;
+}
+
+.main__social ul li:hover {
+	transform: scale(1.3);
+}

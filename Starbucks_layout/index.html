@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;900">
+<body>
+
+<div class="container">
+	<header>
+		<a class="menu__logo">
+			<img src="https://i.imgur.com/nX3occQ.png">
+		</a>
+		<ul class="menu__nav">
+      <li><a href="#">Home</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">What's New</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="main__container">
+			<div class="main__text">
+			<h2>It's not just Coffe </h2>
+			<h2>It's <span>Starbucks</span></h2>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+
+			</p>
+			<a href="#">
+				Learn More
+			</a>
+			</div>
+			<div class="main__image">
+				<img class="main__image__src" src="https://i.imgur.com/gDIurCQ.png">
+			</div>	
+		</div>
+
+		<div class="main__image-background"></div>
+		
+		<div class="main__thumbs">
+			<ul>
+				<li onclick="changeImage('https://i.imgur.com/gDIurCQ.png'); changeBackground('#017143')">
+					<img src="https://i.imgur.com/ZcdtKKO.png">
+				</li>
+				<li onclick="changeImage('https://i.imgur.com/QQ7Xy4Q.png'); changeBackground('#eb7495')">
+					<img src="https://i.imgur.com/NsxmDSp.png">
+				</li>
+				<li onclick="changeImage('https://i.imgur.com/5dBZQp9.png'); changeBackground('#d752b1')">
+					<img src="https://i.imgur.com/M35EQ5q.png">
+				</li>
+			</ul>
+			
+		</div>
+		<div class="main__social">
+			<ul>
+				<li>
+					<i class="fa-brands fa-twitter"></i>
+				</li>
+				<li>
+					<i class="fa-brands fa-facebook-f"></i>
+				</li>
+				<li>
+					<i class="fa-brands fa-instagram"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="transitions.js"></script>
+
+</html>
